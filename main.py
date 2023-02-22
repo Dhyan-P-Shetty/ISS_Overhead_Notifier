@@ -3,11 +3,11 @@ from datetime import datetime
 import smtplib
 import time
 
-my_email = "dhyan2002shetty@gmail.com"
-password = "wdlzqewblvkqkiin"
+my_email = "YOUR EMAIL"
+password = "YOUR GOOGLE APP PASSWORD"
 
-MY_LAT = 12.869910
-MY_LONG = 74.843918
+MY_LAT = YOUR LATTITUDE
+MY_LONG = YOUR LONGITUDE
 
 
 def is_iss_above_me():
@@ -45,7 +45,6 @@ def is_night():
 # If the ISS is close to my current position
 # and it is currently dark
 # Then send me an email to tell me to look up.
-# BONUS: run the code every 60 seconds.
 while True:
     time.sleep(60)
     if is_iss_above_me() and is_night():
