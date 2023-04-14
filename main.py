@@ -2,12 +2,13 @@ import requests
 from datetime import datetime
 import smtplib
 import time
+import os
 
-my_email = "YOUR EMAIL"
-password = "YOUR GOOGLE APP PASSWORD"
+my_email = os.getenv("email")
+password = os.getenv("google_app_password")
 
-MY_LAT = YOUR LATTITUDE
-MY_LONG = YOUR LONGITUDE
+MY_LAT = os.getenv("latitude")
+MY_LONG = os.getenv("longitude")
 
 
 def is_iss_above_me():
